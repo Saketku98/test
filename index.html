@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body style="background-color: coral; font-size: 22px;">
+    <h1 style="color: rgb(94, 221, 143);">Geekster Survey Form</h1>
+  
+    <!-- Create Form -->
+    <form>
+ 
+            <label>
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" placeholder="Enter your name"  minlength="3" required pattern="[a-Z]" />
+            <br>   <br>   
+            <label>
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email" placeholder="Enter your email" required pattern=".+@gmail.com" />
+            <br><br>   
+            <label>Mobile Number</label>
+           <input  placeholder="Phone number" type="number" required minlength="10" maxlength="10" ><br><br>   
+            <label>
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="number" id="age"  placeholder="Enter your age" required maxlength="3" minlength="1"  /><br><br>   
+            <label>
+                Which option best describes you?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>   
+  
+            <label style="color: rgb(196, 12, 150); font-size: large;">
+                Would you recommed Geekster  to a friend?
+               
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label>
+                <input type="radio">Yes</input>
+            </label>
+            <label>
+                <input type="radio">No</input>
+            </label>
+            <label>
+                <input type="radio">Maybe</input>
+            </label>
+            <br><br>   
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label">
+                <input type="checkbox">C</input></label>
+            <label>
+                <input type="checkbox">C++</input></label>
+            <label>
+                <input type="checkbox">C#</input></label>
+            <label>
+                <input type="checkbox">Java</input></label>
+            <label>
+                <input type="checkbox">Python</input></label>
+            <label>
+                <input type="checkbox">JavaScript</input></label>
+            <label>
+                <input type="checkbox">React</input></label>
+            <label>
+                <input type="checkbox">Angular</input></label>
+            <label>
+                <input type="checkbox">Django</input></label>
+            <label>
+                <input type="checkbox">Spring</input></label><br><br>   
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+            <br><br>   
+            
+        <input type="submit" />
+
+    </form>
+</body>
+  
+</html>
